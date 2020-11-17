@@ -1,0 +1,278 @@
+yanggang@yanggang-PC MINGW64 ~
+$ d:
+bash: d:: command not found
+cd
+yanggang@yanggang-PC MINGW64 ~
+$ pwd
+/c/Users/yanggang
+
+yanggang@yanggang-PC MINGW64 ~
+$ d:
+bash: d:: command not found
+
+yanggang@yanggang-PC MINGW64 ~
+$ cd d:/
+
+yanggang@yanggang-PC MINGW64 /d
+$ pwd
+/d
+
+yanggang@yanggang-PC MINGW64 /d
+$ cd YG-User/code-git/
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git
+$ dir
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git
+$ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git
+$ git clone art a working area (see also: git help tutorial)
+bash: syntax error near unexpected token `('
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git
+$    clone             Clone a repository into a new directory
+bash: clone: command not found
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git
+$ git clone https://github.com/langwx521/AutoTesty.git
+Cloning into 'AutoTesty'...
+remote: Enumerating objects: 6, done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 6
+Receiving objects: 100% (6/6), done.
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git
+$ ls
+AutoTesty/
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git
+$ cd AutoTesty/
+ld
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ ld
+bash: ld: command not found
+l
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ ls
+test.txt
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ cat test.txt
+AutoTesty
+
+1111111111111111111111
+
+2222222222222222222222
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ ls
+test.txt
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ vim READ.me
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ l
+bash: l: command not found
+ls
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ ls
+READ.me  test.txt
+git
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        READ.me
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git init
+Reinitialized existing Git repository in D:/YG-User/code-git/AutoTesty/.git/
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ ls
+READ.me  test.txt
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git add READ.me
+warning: LF will be replaced by CRLF in READ.me.
+The file will have its original line endings in your working directory
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   READ.me
+
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git commit -m "第一个readme文件"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'yanggang@yanggang-PC.(none)')
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ ls
+READ.me  test.txt
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git config --global user.email "langwx520@sohu.com"
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git config --global user.name "langwx521"
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git commit -m "第一个READ文件"
+[master 6e73ec5] 第一个READ文件
+ 1 file changed, 1 insertion(+)
+ create mode 100644 READ.me
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git push
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ ll
+total 2
+-rw-r--r-- 1 yanggang 197121 45 Nov 17 11:22 READ.me
+-rw-r--r-- 1 yanggang 197121 63 Nov 17 11:21 test.txt
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ ls
+READ.me  test.txt
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git status -a
+error: unknown switch `a'
+usage: git status [<options>] [--] <pathspec>...
+
+    -v, --verbose         be verbose
+    -s, --short           show status concisely
+    -b, --branch          show branch information
+    --show-stash          show stash information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain[=<version>]
+                          machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --ignored[=<mode>]    show ignored files, optional modes: traditional, matching, no. (Default: traditional)
+    --ignore-submodules[=<when>]
+                          ignore changes to submodules, optional when: all, dirty, untracked. (Default: all)
+    --column[=<style>]    list untracked files in columns
+    --no-renames          do not detect renames
+    -M, --find-renames[=<n>]
+                          detect renames, optionally set similarity index
+    --show-ignored-directory
+                          (DEPRECATED: use --ignore=matching instead) Only show directories that match an ignore pattern name.
+    --no-lock-index       (DEPRECATED: use `git --no-optional-locks status` instead) Do not lock the index
+
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git remote add  origin https://github.com/langwx521/AutoTesty.git
+fatal: remote origin already exists.
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 336 bytes | 12.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/langwx521/AutoTesty.git
+   734089f..6e73ec5  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ ll
+total 2
+-rw-r--r-- 1 yanggang 197121 45 Nov 17 11:22 READ.me
+-rw-r--r-- 1 yanggang 197121 63 Nov 17 11:21 test.txt
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git init
+Reinitialized existing Git repository in D:/YG-User/code-git/AutoTesty/.git/
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
