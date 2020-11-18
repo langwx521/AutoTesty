@@ -3,3 +3,42 @@ AutoTesty
 1111111111111111111111
 
 2222222222222222222222
+
+
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git init
+Reinitialized existing Git repository in D:/YG-User/code-git/AutoTesty/.git/
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git add practice.txt
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git commit -m "操作记录上传"
+[master a7b3aaf] 操作记录上传
+ 1 file changed, 278 insertions(+)
+ create mode 100644 practice.txt
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.98 KiB | 2.98 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/langwx521/AutoTesty.git
+   6e73ec5..a7b3aaf  master -> master
+
+yanggang@yanggang-PC MINGW64 /d/YG-User/code-git/AutoTesty (master)
+$
